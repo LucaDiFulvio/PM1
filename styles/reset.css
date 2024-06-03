@@ -1,0 +1,74 @@
+/* Reset CSS */
+
+/* Reglas para el modelo de caja */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Eliminar márgenes predeterminados */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Eliminar estilos de lista en elementos ul, ol */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Establecer valores predeterminados para la raíz del documento */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Establecer valores predeterminados para el cuerpo del documento */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Establecer estilos predeterminados para enlaces sin clase */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Hacer que las imágenes sean más fáciles de trabajar */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Heredar fuentes para inputs y botones */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Eliminar todas las animaciones y transiciones para personas que prefieren no verlas */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-play-state: paused !important;
+    transition: none !important;
+  }
+}
